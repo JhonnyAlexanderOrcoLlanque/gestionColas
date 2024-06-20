@@ -16,7 +16,7 @@ import com.sis324.gestionColas.service.PacienteService;
 import com.sis324.gestionColas.model.Paciente;
 
 @RestController
-@RequestMapping("/Pacientes")
+@RequestMapping("/Paciente")
 public class PacienteController {
 	
 	@Autowired

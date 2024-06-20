@@ -14,7 +14,7 @@ import com.sis324.gestionColas.service.CitaService;
 import com.sis324.gestionColas.model.Cita;
 
 @RestController
-@RequestMapping("/citas")
+@RequestMapping("/Cita")
 public class CitaController {
 	
 	@Autowired
