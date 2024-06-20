@@ -21,6 +21,8 @@ public class Paciente {
     private String fechaNacimiento;
 	private String historialMedico;
     private boolean activo;
+    
+    //Constructores
     public Paciente() {
 
     }
@@ -39,17 +41,15 @@ public class Paciente {
         this.activo = true;
     }
 
+    //Metodos
     public void eliminarPaciente() {
         this.activo = false;
-    }
-
-    public void crearCita(){
-        //        IMPLEMENTAR
     }
 
     public void realizarPago(){
         //       IMPLEMENTAR
     }
+
 
     //Set y get
 	public Long getId() {
