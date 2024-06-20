@@ -13,7 +13,7 @@ public class ConsultorioService {
     @Autowired
     ConsultorioRepository consultorioRepos;
 
-    public ArrayList<Consultorio> getColas(){
+    public ArrayList<Consultorio> getConsultorios(){
         return ((ArrayList<Consultorio>) consultorioRepos.findAll());
     }
 

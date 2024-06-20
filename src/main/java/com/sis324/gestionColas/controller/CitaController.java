@@ -1,5 +1,3 @@
-
-
 package com.sis324.gestionColas.controller;
 
 import java.util.ArrayList;
@@ -12,34 +10,34 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import com.sis324.gestionColas.service.PacienteService;
-import com.sis324.gestionColas.model.Paciente;
+import com.sis324.gestionColas.service.CitaService;
+import com.sis324.gestionColas.model.Cita;
 
 @RestController
-@RequestMapping("/Pacientes")
-public class PacienteController {
+@RequestMapping("/citas")
+public class CitaController {
 	
 	@Autowired
-	private PacienteService pacienteService;
+	private CitaService citaService;
 	
 	@GetMapping
-	public ArrayList<Paciente> showPacientes(){
-		return pacienteService.getPacientes();
+	public ArrayList<Cita> showCitas(){
+		return citaService.getCitas();
 	}
 	
 	@PostMapping
-	public Paciente insert(@RequestBody Paciente paciente){
-		return pacienteService.save(paciente);
+	public Cita insert(@RequestBody Cita cita){
+		return citaService.save(cita);
 	}
 	
 	@PutMapping
     
-	public Paciente edit(@RequestBody Paciente paciente){
-		return pacienteService.save(paciente);
+	public Cita edit(@RequestBody Cita cita){
+		return citaService.save(cita);
 	}
 	
 	@DeleteMapping(value = "/{id}")
 	public boolean delete(@PathVariable Long id){
-		return pacienteService.delete(id);
+		return citaService.delete(id);
 	}    
 }
