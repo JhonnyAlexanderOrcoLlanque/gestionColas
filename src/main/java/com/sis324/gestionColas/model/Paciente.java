@@ -20,7 +20,7 @@ public class Paciente {
     private int cuentaBancaria;
     private String fechaNacimiento;
 	private String historialMedico;
-    private boolean activo;
+    //private boolean activo;
     
     //Constructores
     public Paciente() {
@@ -38,12 +38,12 @@ public class Paciente {
         this.cuentaBancaria = cuentaBancaria;
         this.fechaNacimiento = fechaNacimiento;
         this.historialMedico = historialMedico;
-        this.activo = true;
+        //this.activo = true;
     }
 
     //Metodos
     public void eliminarPaciente() {
-        this.activo = false;
+        //this.activo = false;
     }
 
     public void realizarPago(){
